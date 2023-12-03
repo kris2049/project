@@ -10,7 +10,7 @@
 
 <AnchorPane prefHeight="1029.0" prefWidth="802.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.teamsolid.javaproject.HelloController">
    <children>
-      <GridPane fx:id="gameBoard" gridLinesVisible="true" layoutX="0.5" layoutY="0.5">
+      <GridPane fx:id="gameBoard" gridLinesVisible="true" hgap="5.0" layoutX="0.5" layoutY="0.5" vgap="5.0">
           <!-- Column Constraints -->
           <columnConstraints>
               <ColumnConstraints hgrow="SOMETIMES" minWidth="10" prefWidth="100" />
@@ -37,6 +37,6 @@
       </GridPane>
       <Button fx:id="rollButton" layoutX="91.0" layoutY="882.0" mnemonicParsing="false" prefHeight="79.0" prefWidth="146.0" text="Roll" />
       <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="200.0" layoutX="332.0" layoutY="840.0" pickOnBounds="true" preserveRatio="true" />
-      <TextFlow fx:id="textFlow" layoutX="569.0" layoutY="815.0" prefHeight="200.0" prefWidth="200.0" />
+      <TextFlow fx:id="textFlow" layoutX="567.0" layoutY="873.0" prefHeight="126.0" prefWidth="200.0" />
    </children>
 </AnchorPane>

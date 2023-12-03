@@ -5,32 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25c3f5de-5984-4f55-a32f-1d805e6591ef" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/teamsolid/javaproject/HelloApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/teamsolid/javaproject/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/teamsolid/javaproject/Obstacle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/teamsolid/javaproject/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/teamsolid/javaproject/board.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/teamsolid/javaproject/hello-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/dice_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/dice_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/dice_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/dice_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/dice_5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/dice_6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/dice_7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/dice_8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/dice_9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/p1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images/p2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/teamsolid/javaproject/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/teamsolid/javaproject/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/teamsolid/javaproject/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/teamsolid/javaproject/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/teamsolid/javaproject/Obstacle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/teamsolid/javaproject/Obstacle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/teamsolid/javaproject/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/teamsolid/javaproject/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/teamsolid/javaproject/board.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/teamsolid/javaproject/board.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +43,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "zjz-branch",
     "last_opened_file_path": "C:/Users/Administrator/IdeaProjects/JavaProject/src/main/resources/images",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -110,7 +92,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1701522605675</updated>
-      <workItem from="1701522606789" duration="16782000" />
+      <workItem from="1701522606789" duration="48933000" />
     </task>
     <servers />
   </component>

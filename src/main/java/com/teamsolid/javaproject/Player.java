@@ -4,20 +4,25 @@ import java.util.Random;
 public class Player {
     private int[] position;
     private int distance;
+    private boolean stoppedBySpike;
 
 
     public Player() {
         this.position = new int[]{0, 0};
-        this.distance = 0;
+        this.distance = 1;
     }
 
     public int[] getPosition() {
         return position;
     }
 
-    public void setPosition(int[] position) {
-        this.position = position;
+    public boolean isStoppedBySpike() {
+        return stoppedBySpike;
     }
+    public void setStoppedBySpike(boolean stopped) {
+        this.stoppedBySpike = stopped;
+    }
+
 
     public void move(int steps) {
         distance += steps;
@@ -84,7 +89,7 @@ public class Player {
             this.position[0] = 4;
             this.position[1] = 4;
         }
-        if(distance==64){
+        if(distance>=64){
             this.position[0] = 3;
             this.position[1] = 4;
         }
@@ -92,16 +97,7 @@ public class Player {
 
     }
 
-    public void move_valid(int[] position, int steps)
-    {
-        if(position[0]+steps > 8 && (position[1]+1)<8)
-        {
-            position[0] = steps-(8-position[0]);
-            position[1] += 1;
 
-        }
-
-    }
 
     public void teleportToRandomLocation(){
         Random random = new Random();
@@ -109,16 +105,81 @@ public class Player {
         int randomY = random.nextInt(8); // 生成随机 Y 坐标（0到7）
         this.position[0] = randomX;
         this.position[1] = randomY;
+        this.distance = calculateDistance(this.position[0],this.position[1]);
+        System.out.println(this.distance);
     }
 
-    public void skipCurrentTurn(boolean skipTurn){
-        if (skipTurn == true){
-            return;
-        }
-    }
-
-    public void teleportToBegin(){
+    public void reborn(){
+        this.distance = 1;
         this.position[0] = 0;
         this.position[1] = 0;
     }
+
+    public int calculateDistance(int x, int y) {
+        int d = 0; // 距离起点的步数
+        int[] layer_size = {4*7,4*5,4*3,4*1};
+        int i=0;
+
+        // 遍历每一层
+        for (int layer = 0; layer <= 3; layer++) {
+            // 确定每一层的边界
+            int minBound = layer;
+            int maxBound = 7 - layer;
+
+
+            if(x == minBound){
+                // 左侧
+                while(i<=minBound){
+                    d += layer_size[i];
+                    i++;
+                }
+                d = d -(y-(layer+1));
+                break;
+            }
+            if(x == maxBound){
+                // 右侧
+                if(layer == 0){
+                    d = 8 + y;
+                    break;
+                }else {
+                    while (i < minBound) {
+                        d += layer_size[i];
+                        i++;
+                    }
+                    d = d + maxBound - (layer - 1 ) + y - layer;
+                    break;
+                }
+            }
+            if(y == minBound){
+                // 上侧
+                if(layer == 0){
+                    d = x+1;
+                    break;
+                }else {
+                    while (i < minBound) {
+                        d += layer_size[i];
+                        i++;
+                    }
+                    d = d+(x-layer+1);
+                    break;
+                }
+            }
+            if(y == maxBound){
+                //下侧
+                while(i<=minBound){
+                    d += layer_size[i];
+                    i++;
+                }
+                d = d - maxBound + layer  - (x-layer);
+                break;
+            }
+
+        }
+
+        return d;
+    }
+
+
+
+
 }
