@@ -14,7 +14,7 @@ import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
 
-public class HelloController {
+public class GameController {
     @FXML
     private GridPane gameBoard;
 
